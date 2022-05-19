@@ -1,0 +1,13 @@
+[user]
+	email = email@xyz.com
+	name = name
+[core]
+	editor = code --wait
+[push]
+	followTags = true
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset) - %C(bold green)(%ar)%C(reset)' --all
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s --grep
